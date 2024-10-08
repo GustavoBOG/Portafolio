@@ -120,20 +120,20 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   me: {
-    color: "#19fc00",
+    color: "#1d8bf0",
   },
   light: {
-    color: "#00e600",
+    color: "#edff00",
   },
   key:{
-    color:"#00bb00",
+    color:"#b3b3b1",
   },
 
   contact:{
-    color:"#005800",
+    color:"#5fadf4",
   },
   sidebar:{
-    width: "40vw",
+    width: "50vw",
     fontSize: "1.4rem",
     fontWeight: "bold",
     color: "#333",
