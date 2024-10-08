@@ -72,8 +72,11 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down("sm")]: {
         display: "block",
         color: "white",
+        position: "absolute",
+        top:12,
+        right: 10,
           "&:hover":{
-            color: "rgb(0,222,0)"
+            color: "rgb(0,222,0)",
           }
       },
     },
