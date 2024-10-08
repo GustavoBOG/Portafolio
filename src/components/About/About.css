@@ -1,0 +1,13 @@
+.Asection {
+    min-height: 100vh;
+    background: #333;
+    color: #fff;
+}
+.Asectioncontent{
+    max-width: 90vw;
+    margin: 0 auto;
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}

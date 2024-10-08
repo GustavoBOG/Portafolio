@@ -1,0 +1,13 @@
+.Csection {
+    min-height: 100vh;
+    background: #fff;
+    color: #333;
+}
+.Csectioncontent{
+    max-width: 80vw;
+    margin: 0 auto;
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
