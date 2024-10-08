@@ -4,9 +4,11 @@ import EmojiObjectsTwoToneIcon from "@mui/icons-material/EmojiObjectsTwoTone";
 import ConstructionTwoToneIcon from "@mui/icons-material/ConstructionTwoTone";
 import ContactPhoneTwoToneIcon from "@mui/icons-material/ContactPhoneTwoTone";
 import MenuIcon from '@mui/icons-material/Menu';
-import { IconButton, List } from "@mui/material";
+import CancelIcon from '@mui/icons-material/Cancel';
+import { Divider, Drawer, IconButton, List, ListItem, ListItemIcon } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import "./Navbar.css";
+import { useState } from "react";
 
 const links = [
   {
@@ -33,7 +35,9 @@ const links = [
 
 const Navbar = () => {
   const classes = useStyles();
+  const [open, setOpen] = useState(true)
   return (
+    <>
     <nav className="navbar">
       <div className="toolbar">
         <h1 className="tittle">Gustavo Bolivar</h1>
@@ -52,11 +56,38 @@ const Navbar = () => {
             </Link>
           ))}
         </List>
-        <IconButton edge="end" className={classes.menubutton}>
+        <IconButton edge="end" className={classes.menubutton} onClick={()=>setOpen(!open)}>
           <MenuIcon fontSize="large" />
         </IconButton>
       </div>
     </nav>
+      <Drawer anchor="right" open={open} onClose={()=> setOpen(false)}>
+        <IconButton>
+          <CancelIcon className={classes.cancelbutton} onClick={()=>setOpen(false)}></CancelIcon>
+        </IconButton>
+        <Divider/>
+        {links.map(({ id, text, icon }, index) => (
+            <Link
+              key={index}
+              to={id}
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              >
+              {/* offset nos da unos pixeles extra para que el titulo de cada link no quede debajo del navbar */}
+              <ListItem>
+                <span>
+                  <ListItemIcon>
+                    {icon}
+                  </ListItemIcon>
+                </span>{text}
+              </ListItem>
+            </Link>
+          ))
+        }
+      </Drawer>
+      </>
   );
 };
 
