@@ -10,32 +10,35 @@ import { makeStyles } from "@mui/styles";
 import "./Navbar.css";
 import { useState } from "react";
 
-const links = [
-  {
-    id: "about",
-    text: "About Me",
-    icon: <AccountCircleRoundedIcon />,
-  },
-  {
-    id: "skills",
-    text: "Skills",
-    icon: <EmojiObjectsTwoToneIcon />,
-  },
-  {
-    id: "proyects",
-    text: "Proyects",
-    icon: <ConstructionTwoToneIcon />,
-  },
-  {
-    id: "contact",
-    text: "Contact",
-    icon: <ContactPhoneTwoToneIcon />,
-  },
-];
+
 
 const Navbar = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(false)
+
+  const links = [
+    {
+      id: "about",
+      text: "About Me",
+      icon: <AccountCircleRoundedIcon fontSize="large" className={classes.me}/>,
+    },
+    {
+      id: "skills",
+      text: "Skills",
+      icon: <EmojiObjectsTwoToneIcon fontSize="large" className={classes.light}/>,
+    },
+    {
+      id: "proyects",
+      text: "Proyects",
+      icon: <ConstructionTwoToneIcon fontSize="large" className={classes.key}/>,
+    },
+    {
+      id: "contact",
+      text: "Contact",
+      icon: <ContactPhoneTwoToneIcon fontSize="large" className={classes.contact}/>,
+    },
+  ];
+
   return (
     <>
     <nav className="navbar">
@@ -63,12 +66,13 @@ const Navbar = () => {
     </nav>
       <Drawer anchor="right" open={open} onClose={()=> setOpen(false)}>
         <IconButton>
-          <CancelIcon className={classes.cancelbutton} onClick={()=>setOpen(false)}></CancelIcon>
+          <CancelIcon className={classes.cancelbutton} onClick={()=>setOpen(false)} fontSize="large"></CancelIcon>
         </IconButton>
         <Divider/>
         {links.map(({ id, text, icon }, index) => (
             <Link
               key={index}
+              className={classes.sidebar}
               to={id}
               spy={true}
               smooth={true}
@@ -76,7 +80,7 @@ const Navbar = () => {
               offset={-80}
               >
               {/* offset nos da unos pixeles extra para que el titulo de cada link no quede debajo del navbar */}
-              <ListItem>
+              <ListItem component="h4">
                 <span>
                   <ListItemIcon>
                     {icon}
@@ -90,6 +94,9 @@ const Navbar = () => {
       </>
   );
 };
+
+
+
 
 const useStyles = makeStyles((theme) => ({
   menu: {
@@ -109,9 +116,39 @@ const useStyles = makeStyles((theme) => ({
           "&:hover":{
             color: "rgb(0,222,0)",
           }
-      },
+      }
     },
   },
+  me: {
+    color: "#19fc00",
+  },
+  light: {
+    color: "#00e600",
+  },
+  key:{
+    color:"#00bb00",
+  },
+
+  contact:{
+    color:"#005800",
+  },
+  sidebar:{
+    width: "40vw",
+    fontSize: "1.4rem",
+    fontWeight: "bold",
+    color: "#333",
+    margin: theme.spacing(10,0,0,4),
+    [theme.breakpoints.down("xs")]:{
+      width:"70vw",
+    },
+
+  },
+  cancelbutton:{
+    color: "rgba(255, 0, 0, 0.5)",
+    "&:hover": {
+      color: "rgba(255, 0, 0, 0.7)",
+  },
+},
 }));
 
 export default Navbar;
