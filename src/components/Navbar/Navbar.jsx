@@ -35,7 +35,7 @@ const links = [
 
 const Navbar = () => {
   const classes = useStyles();
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   return (
     <>
     <nav className="navbar">
