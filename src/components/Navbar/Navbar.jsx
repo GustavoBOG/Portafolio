@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import EmojiObjectsTwoToneIcon from "@mui/icons-material/EmojiObjectsTwoTone";
 import ConstructionTwoToneIcon from "@mui/icons-material/ConstructionTwoTone";
@@ -9,6 +9,7 @@ import { Divider, Drawer, IconButton, List, ListItem, ListItemIcon } from "@mui/
 import { makeStyles } from "@mui/styles";
 import "./Navbar.css";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 
 
