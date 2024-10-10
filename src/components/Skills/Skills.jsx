@@ -40,7 +40,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import "./Skills.css";
 
-const Skills = () => {
+const Skills = ({ title, id }) => {
   const [expandedCategory, setExpandedCategory] = useState(null);
 
   const skills = [
@@ -90,9 +90,9 @@ const Skills = () => {
   };
 
   return (
-    <div className="skills-container">
-      <Typography variant="h2" component="h1" className="skills-title">
-        Skills
+    <div className="skills-container" id={id}>
+      <Typography variant="h2"  className="skills-title">
+      {title}
       </Typography>
       <div className="skills-grid">
         {skills.map((skillSet, index) => (
