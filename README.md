@@ -4,9 +4,10 @@
 1:20:01 por ahi voy en el video 
 1:26:22 por ahi voy en el video 
 
-### primera vez usando MATERIAL-UI
 
-////////////////////////////////////////////////////////////////////////////////////
+---
+
+### primera vez usando MATERIAL-UI
 
 ## BREAKPOINTS EN MATERIAL-UI :
 
@@ -16,7 +17,8 @@
 - lg: Large (1200px y más)
 - xl: Extra large (1536px y más)
 
-////////////////////////////////////////////////////////////////////////////////////
+
+---
 
 ## COLORES QUE PARECE QUE VOY A UTILIZAR :
 
@@ -32,4 +34,17 @@
 - other page 
 ``` RGB(76,75,75)``` 
 
-////////////////////////////////////////////////////////////////////////////////////
+---
+
+
+## SIGUIENTES TAREAS :
+
+- empezar a trabajar por la seccion de :
+    - skills
+    - about me 
+        - crear boton para descargar CV (en pdf)
+    - contact
+    - proyects
+- agregar colores que voy a utilizar
+- intentar pasar los styles de los archivos ```.css``` a solo los archivos ```.jsx``` para codigo mas limpio
+
