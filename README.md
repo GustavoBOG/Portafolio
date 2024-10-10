@@ -39,12 +39,12 @@
 
 ## SIGUIENTES TAREAS :
 
-- empezar a trabajar por la seccion de :
-    - skills
-    - about me 
-        - crear boton para descargar CV (en pdf)
-    - contact
-    - proyects
-- agregar colores que voy a utilizar
-- intentar pasar los styles de los archivos ```.css``` a solo los archivos ```.jsx``` para codigo mas limpio
+- [ ]empezar a trabajar por la seccion de :
+    - [ ]skills
+    - [ ]about me 
+        - [ ]crear boton para descargar CV (en pdf)
+    - [ ]contact
+    - [ ]proyects
+- [ ]agregar colores que voy a utilizar
+- [ ]intentar pasar los styles de los archivos ```.css``` a solo los archivos ```.jsx``` para codigo mas limpio
 
