@@ -1,11 +1,12 @@
 .Asection {
     min-height: 100vh;
+    margin-top: 90px;
     background: #333;
     color: #fff;
 }
 .Asectioncontent{
-    max-width: 90vw;
-    margin: 0 auto;
+    max-width: 100vw;
+    
     cursor: pointer;
 }
 a{

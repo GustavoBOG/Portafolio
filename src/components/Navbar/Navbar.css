@@ -1,57 +1,117 @@
-.navbar{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
     background-color: #4c4b4b;
     color: #fffefe;
     padding: 1.5rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
 
-.toolbar{
+.toolbar {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    width: 100%;
 }
 
 .tittle {
     display: inline-block;
     cursor: pointer;
     font-size: 1.8rem;
-    margin-right: 10px;
-
+    margin-right: 20px;
     background-image: linear-gradient(#00de00, #00de00);
     background-repeat: no-repeat;
-
     background-size: 10px 100%;
     background-position: 0 0;
-    transition: 
-    background-size 0.5s,
-    background-position 0.3s 0.5s;
-
+    transition: background-size 0.5s, background-position 0.3s 0.5s;
 }
 
 .tittle:hover {
     background-size: 100% 100%;
     background-position: 100% 0;
-    transition: 
-    background-size 0.3s,
-    background-position 0.5s 0.3s;
+    transition: background-size 0.3s, background-position 0.5s 0.3s;
 }
 
 .menu {
     color: #fffefe;
     font-size: 1.4rem;
     cursor: pointer;
-    
 }
-a{
+
+
+a {
     margin-left: 18px;
     font-weight: bold;
 }
+
 a:hover {
-   color: rgb(0,222,0);
-   border-bottom: 2px solid ;
+    color: rgb(0, 222, 0);
+    border-bottom: 2px solid;
 }
+
+.menubutton.MuiIconButton-root {
+    
+    display: none;
+}
+
+.me {
+    color: #1d8bf0;
+}
+
+.light {
+    color: #edff00;
+}
+
+.key {
+    color: #c9c9c4;
+}
+
+.contact {
+    color: #5fadf4;
+}
+
+.cancelbutton {
+    color: rgba(255, 0, 0, 0.5);
+}
+.cancelbutton:hover {
+    color: rgba(255, 0, 0, 0.7)
+}
+
+.sidebar {
+    width: 50vw;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin: 60px 0 0 4px;
+    /* background-color: rgb(31,41,55); */
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+    .menubutton.MuiIconButton-root {
+        display: block;
+        color: #fffefe;
+        padding-bottom: 0;
+        padding-top: 0;
+
+    }
+    .menubutton:hover {
+        color: rgb(0,222,0);
+    }
+    .toolbar{
+        justify-content: space-between;
+    }
+
+}
+
+
+@media (max-width: 360px) {
+    .sidebar {
+        width: 70vw;
+    }
+}   
+
