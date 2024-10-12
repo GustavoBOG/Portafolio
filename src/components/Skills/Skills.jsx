@@ -90,6 +90,7 @@ const Skills = ({ title, id }) => {
   };
 
   return (
+    <div className='skills-page'>
     <div className="skills-container" id={id}>
       <Typography variant="h2"  className="skills-title">
       {title}
@@ -125,6 +126,7 @@ const Skills = ({ title, id }) => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
