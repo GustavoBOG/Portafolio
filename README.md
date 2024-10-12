@@ -1,10 +1,4 @@
-
-
-
-1:20:01 por ahi voy en el video 
-1:26:22 por ahi voy en el video 
-
-
+ este es mi portafolio donde hago una pequeña introducción hacia mi persona dejo enlace de mi CV, mis habilidades y expongo mis proyectos 
 ---
 
 ### primera vez usando MATERIAL-UI
@@ -39,11 +33,12 @@
 
 ## SIGUIENTES TAREAS :
 
-- [ ]empezar a trabajar por la seccion de :
-    - [ ]skills
+- [ ]empezar a trabajar por la seccion de:
+    - [x]skills
     - [ ]about me 
         - [ ]crear boton para descargar CV (en pdf)
     - [ ]contact
+        - [ ]que me llegue sms o mail de que alguien se quiso poner en contacto conmigo (si es posible que me llegue un sms o mail si ha abierto el link hacia mi portafolio).
     - [ ]proyects
 - [ ]agregar colores que voy a utilizar
 - [ ]intentar pasar los styles de los archivos ```.css``` a solo los archivos ```.jsx``` para codigo mas limpio
