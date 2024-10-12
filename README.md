@@ -43,3 +43,17 @@
 - [ ]agregar colores que voy a utilizar
 - [ ]intentar pasar los styles de los archivos ```.css``` a solo los archivos ```.jsx``` para codigo mas limpio
 
+
+
+---
+
+## links para los proyectos :
+
+- Portafolio
+    - https://portafolio-peach-nu.vercel.app/
+- Pokedex
+    - https://poke-evo-lution.vercel.app/
+- Rick&Morty
+    - https://rick-morty-nine-tau.vercel.app/
+- Travel-diary
+    - https://travel-diary-one.vercel.app/
