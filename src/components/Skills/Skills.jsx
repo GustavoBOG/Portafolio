@@ -22,7 +22,7 @@ import "./Skills.css";
 const Skills = ({ title, id }) => {
   const [expandedCategory, setExpandedCategory] = useState(null);
 
-  //OBJETO CON LAS TECNOLOGIAS 
+  //-----OBJETO CON LAS TECNOLOGIAS 
 
   const skills = [
     {
