@@ -13,7 +13,7 @@ const Proyects = ({title,id}) => {
       <Typography variant='h3'>{title}</Typography>
       <Grid container className={classes.grid}>
         {
-          mockData.map(({title,image, link}, index)=>(
+          mockData.map(({title,image, link, description}, index)=>(
             <Grid item key={index} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia image={image} className={classes.caratula} titulo="caratula"/>

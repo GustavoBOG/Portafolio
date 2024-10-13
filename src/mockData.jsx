@@ -6,17 +6,20 @@ const mockData = [
     {
         title: "Pokedex de Pokémon",
         image: pokedex,
-        link: "https://poke-evo-lution.vercel.app/"
+        link: "https://poke-evo-lution.vercel.app/",
+        description: "Una Pokedex interactiva con información detallada sobre Pokémon."
     },
     {
         title: "Rick and Morty",
         image: rickMorty,
-        link: "https://rick-morty-nine-tau.vercel.app/"
+        link: "https://rick-morty-nine-tau.vercel.app/",
+        description: "Explora el universo de Rick and Morty con esta aplicación web."
     },
     {
         title: "Travel Diary",
         image: travelDiary,
-        link: "https://travel-diary-one.vercel.app/"
+        link: "https://travel-diary-one.vercel.app/",
+        description: "Un diario de viajes digital para compartir tus aventuras."
     },
 ];
 
