@@ -28,6 +28,7 @@
   }
   
   .skill-card {
+    font-size: 25px;
     transition: transform 0.3s ease-in-out;
   }
   
@@ -47,12 +48,27 @@
   
   .technologies-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 16px;
   }
   
   .tech-card {
     text-align: center;
+    padding: 16px;
+    min-width: 150px;
+  }
+
+  .tech-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .tech-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+    object-fit: contain;
   }
   
   .stars-container {
@@ -89,6 +105,16 @@
     .skills-container {
       padding: 16px;
     }
+
+    .skill-card {
+      font-size: 18px;
+    }
+
+    .tech-logo {
+      width: 40px;
+    height: 40px;
+    }
+
   
     .skills-title {
       font-size: 2rem;

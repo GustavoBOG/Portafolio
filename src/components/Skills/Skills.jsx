@@ -1,76 +1,57 @@
-// import { Typography } from "@mui/material";
-// import "./Skills.css";
-
-
-
-// const Skills = ({ title, id }) => {
-//   const technologies = [
-//     {
-//       category: 'Frontend',
-//       technologies: ['HTML5', 'CSS', 'JavaScript', 'React', 'npm']
-//     },
-//     {
-//       category: 'Backend',
-//       technologies: ['MySQL', 'Node.js', 'Express']
-//     },
-//     {
-//       category: 'Tools',
-//       technologies: ['VS Code', 'MySQL', 'Postman', 'GitBash', 'GitHub', 'Slack']
-//     }
-//   ];
-
-//   return (
-//     <div className="Ssection">
-//       <div className="Ssectioncontent" id={id}>
-//         <Typography variant="h3">{title}</Typography>
-//       </div>
-//     </div>
-//   );
-// };
-
-
-// export default Skills;
-
-
 import { useState } from 'react';
 import { Typography, Card, CardContent } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import htmlLogo from '../../assets/htmlLogo.png'
+import cssLogo from '../../assets/cssLogo.png'
+import jsLogo from '../../assets/jsLogo.png'
+import reactLogo from '../../assets/reactLogo.png'
+import npmLogo from '../../assets/npmLogo.png'
+import mysqlLogo from '../../assets/mysqlLogo.png'
+import nodejsLogo from '../../assets/nodejsLogo.png'
+import expressLogo from '../../assets/expressLogo.png'
+import vscodeLogo from '../../assets/vscodeLogo.png'
+import postmanLogo from '../../assets/postmanLogo.png'
+import gitbashLogo from '../../assets/gitbashLogo.png'
+import githubLogo from '../../assets/githubLogo.png'
+import slackLogo from '../../assets/slackLogo.png'
 import "./Skills.css";
 
 const Skills = ({ title, id }) => {
   const [expandedCategory, setExpandedCategory] = useState(null);
 
+  //OBJETO CON LAS TECNOLOGIAS 
+
   const skills = [
     {
       category: 'Frontend',
       technologies: [
-        { name: 'HTML5', stars: 5 },
-        { name: 'CSS', stars: 5 },
-        { name: 'JavaScript', stars: 4 },
-        { name: 'React', stars: 4 },
-        { name: 'npm', stars: 5 }
+        { name: 'HTML5', stars: 5, logo: htmlLogo },
+        { name: 'CSS', stars: 5, logo: cssLogo },
+        { name: 'JavaScript', stars: 4, logo: jsLogo},
+        { name: 'React', stars: 4, logo: reactLogo },
+        { name: 'npm', stars: 5, logo: npmLogo }
       ]
     },
     {
       category: 'Backend',
       technologies: [
-        { name: 'MySQL', stars: 4 },
-        { name: 'Node.js', stars: 3 },
-        { name: 'Express', stars: 3 }
+        { name: 'MySQL', stars: 4, logo: mysqlLogo },
+        { name: 'Node.js', stars: 3, logo: nodejsLogo },
+        { name: 'Express', stars: 3, logo: expressLogo }
       ]
     },
     {
       category: 'Tools',
       technologies: [
-        { name: 'VS Code', stars: 5 },
-        { name: 'MySQL', stars: 5 },
-        { name: 'Postman', stars: 4 },
-        { name: 'GitBash', stars: 5 },
-        { name: 'GitHub', stars: 5 },
-        { name: 'Slack', stars: 3 }
+        { name: 'VS Code', stars: 5, logo: vscodeLogo },
+        { name: 'MySQL', stars: 5, logo: mysqlLogo },
+        { name: 'Postman', stars: 4, logo: postmanLogo },
+        { name: 'GitBash', stars: 5, logo: gitbashLogo },
+        { name: 'GitHub', stars: 5, logo: githubLogo },
+        { name: 'Slack', stars: 3, logo: slackLogo }
       ]
     }
   ];
@@ -115,9 +96,10 @@ const Skills = ({ title, id }) => {
               {skillSet.technologies.map((tech, techIndex) => (
                 <Card key={techIndex} className="skill-card tech-card">
                   <CardContent>
-                    <Typography variant="h6" component="h3">
-                      {tech.name}
-                    </Typography>
+                    <div className='tech-info'>
+                      <img src={tech.logo} alt={`${tech.name} logo`} className="tech-logo" />
+                      <h3>{tech.name}</h3>
+                    </div>
                     {renderStars(tech.stars)}
                   </CardContent>
                 </Card>
