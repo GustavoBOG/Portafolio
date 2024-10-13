@@ -91,7 +91,8 @@
 
 
 
-  /* -------------------------empieza las pantallas pequeñas------------------ */
+  /* -------------------------empieza las pantallas pequeñas 900px  ------------------ */
+
 
 
   @media (max-width: 900px) {
@@ -111,6 +112,9 @@
 
   }
   
+/* -------------------------empieza las pantallas pequeñas 600px  ------------------ */
+
+
   @media (max-width: 600px) {
     .skills-container {
       padding: 16px;
