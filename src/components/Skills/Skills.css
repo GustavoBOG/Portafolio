@@ -88,7 +88,12 @@
   .expand-icon {
     display: none;
   }
-  
+
+
+
+  /* -------------------------empieza las pantallas pequeñas------------------ */
+
+
   @media (max-width: 900px) {
     .skills-grid {
       flex-direction: column;
@@ -99,6 +104,11 @@
       width: 100%;
       max-width: none;
     }
+
+    .technologies-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
   }
   
   @media (max-width: 600px) {
@@ -115,9 +125,8 @@
     height: 40px;
     }
 
-  
-    .skills-title {
-      font-size: 2rem;
+    .skills-grid{
+      gap: 0;
     }
   
     .technologies-grid {
@@ -126,6 +135,8 @@
   
     .technologies-grid.expanded {
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
     }
   
     .category-card {
