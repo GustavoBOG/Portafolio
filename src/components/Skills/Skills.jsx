@@ -4,19 +4,19 @@ import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-import htmlLogo from '../../assets/htmlLogo.png'
-import cssLogo from '../../assets/cssLogo.png'
-import jsLogo from '../../assets/jsLogo.png'
-import reactLogo from '../../assets/reactLogo.png'
-import npmLogo from '../../assets/npmLogo.png'
-import mysqlLogo from '../../assets/mysqlLogo.png'
-import nodejsLogo from '../../assets/nodejsLogo.png'
-import expressLogo from '../../assets/expressLogo.png'
-import vscodeLogo from '../../assets/vscodeLogo.png'
-import postmanLogo from '../../assets/postmanLogo.png'
-import gitbashLogo from '../../assets/gitbashLogo.png'
-import githubLogo from '../../assets/githubLogo.png'
-import slackLogo from '../../assets/slackLogo.png'
+import htmlLogo from '../../assets/htmlLogo.png';
+import cssLogo from '../../assets/cssLogo.png';
+import jsLogo from '../../assets/jsLogo.png';
+import reactLogo from '../../assets/reactLogo.png';
+import npmLogo from '../../assets/npmLogo.png';
+import mysqlLogo from '../../assets/mysqlLogo.png';
+import nodejsLogo from '../../assets/nodejsLogo.png';
+import expressLogo from '../../assets/expressLogo.png';
+import vscodeLogo from '../../assets/vscodeLogo.png';
+import postmanLogo from '../../assets/postmanLogo.png';
+import gitbashLogo from '../../assets/gitbashLogo.png';
+import githubLogo from '../../assets/githubLogo.png';
+import slackLogo from '../../assets/slackLogo.png';
 import "./Skills.css";
 
 const Skills = ({ title, id }) => {
