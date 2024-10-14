@@ -13,11 +13,17 @@ const Proyects = ({title,id}) => {
       <Typography variant='h3'>{title}</Typography>
       <Grid container className={classes.grid}>
         {
-          mockData.map(({title,image, link, description}, index)=>(
+          mockData.map(({title,image, link}, index)=>(
             <Grid item key={index} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
-                <CardMedia image={image} className={classes.caratula} titulo="caratula"/>
-                <CardContent>
+                <CardMedia 
+                image={image} 
+                className={classes.caratula} 
+                title="caratula"
+                />
+                <CardContent
+                className={classes.enlace} 
+                >
                   <Link href={link} color="primary" target="_blank" rel="noopener noreferrer">
                     {title}
                   </Link>
@@ -37,7 +43,6 @@ const useStyles = makeStyles((theme) => ({
   Psectioncontent:{
     maxWidth:"90vw",
     margin: "0 auto",
-    padding: theme.spacing(5),
   },
   grid: {
     marginTop : theme.spacing(20),
@@ -49,7 +54,12 @@ const useStyles = makeStyles((theme) => ({
   },
   caratula: {
     height: 0,
-    paddingTop: '56.25%',
+    paddingTop: '76%',
+    objectFit: 'contain',
+  },
+  enlace:{
+    textAlign: 'center',
+    fontSize: '20px'
   },
 }))
 
