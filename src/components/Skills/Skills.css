@@ -26,6 +26,7 @@
   
   .skill-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0px 4px 20px rgb(144,24,134);
   }
   
   .category-card {

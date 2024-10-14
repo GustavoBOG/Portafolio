@@ -51,6 +51,11 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 345,
     minHeight: 275,
     margin: theme.spacing(3),
+    transition: 'transform 0.50s ease-in-out',
+    '&:hover': {
+      transform: 'scale(1.05)',
+      boxShadow: '0px 4px 20px rgb(25, 189, 243)',
+    }
   },
   caratula: {
     height: 0,
