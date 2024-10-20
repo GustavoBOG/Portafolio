@@ -65,8 +65,9 @@ const About = ({title, id}) => {
             variant="contained" 
             className={classes.inbuttom}
             component="a" 
-            href={pdf} 
-            download
+            href="https://www.linkedin.com/in/gustavo-bolivar/"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               position: 'absolute', 
             }}><LinkedInIcon/>
@@ -75,8 +76,9 @@ const About = ({title, id}) => {
             variant="contained" 
             className={classes.gitbuttom}
             component="a" 
-            href={pdf} 
-            download
+            href="https://github.com/GustavoBOG" 
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               position: 'absolute', 
             }}><GitHubIcon/>
@@ -85,8 +87,9 @@ const About = ({title, id}) => {
             variant="contained" 
             className={classes.instabuttom}
             component="a" 
-            href={pdf} 
-            download
+            href="https://www.instagram.com/gusta_bolivar/" 
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               position: 'absolute', 
             }}><InstagramIcon/>
