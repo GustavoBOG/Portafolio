@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     transition: 'transform 0.50s ease-in-out',
     '&:hover': {
       transform: 'scale(1.05)',
-      boxShadow: '0px 4px 20px rgb(25, 189, 243)',
+      boxShadow: '0px 4px 15px rgb(124, 157, 198)',
     }
   },
   caratula: {

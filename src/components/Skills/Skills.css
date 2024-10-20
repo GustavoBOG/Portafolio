@@ -1,7 +1,7 @@
 .skills-page{
   width: 100vw;
   min-height: 100vh;
-  background-color: rgb(226,212,212);
+  background-color: rgb(194, 232, 255);
 }
 .skills-container {
     min-height: 100vh;
@@ -26,7 +26,7 @@
   
   .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 4px 20px rgb(144,24,134);
+    box-shadow: 0px 4px 20px rgb(80, 124, 169);
   }
   
   .category-card {
@@ -37,7 +37,7 @@
   }
   
   .category-title {
-    color: #1976d2;
+    color: rgb(4, 37, 88);
     font-weight: bold;
     text-align: center;
   }
