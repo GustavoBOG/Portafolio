@@ -18,25 +18,26 @@ const About = ({title, id}) => {
         <CardMedia image={me} className={classes.media} title="picture" />
         <CardContent className={classes.cardcontent}>
         <TypeWriterEffect
-            text="Hello, I’m Gustavo Bolívar"
+            text="Hola, soy Gustavo  Bolívar."
             textStyle={{ 
               fontSize: "2.5rem", 
-              fontWeight: 800
+              fontWeight: 800,
+              color: "rgb(4, 37, 88)",
             }}
-            cursorColor="rgb(25, 189, 243)"
+            cursorColor="#d4f0fc"
             startDelay={100}
             typeSpeed={70}
           />
           <TypeWriterEffect
-            text="a passionate developer and technology enthusiast."
+            text="un apasionado del desarrollo y la tecnología."
             textStyle={{  
               fontSize: "1.4rem", 
-              fontWeight: 600, 
-              color: "rgb(60,60,60)",
-
+              fontWeight: 600,
+              color: "rgb(80, 124, 169)"
             }}
             cursorColor="rgb(25, 189, 243)"
-            startDelay={2200}
+            
+            startDelay={2300}
             typeSpeed={70}
           />
             <Typography variant="h6" style={{ color: "rgb(76,75,75)"}}>
@@ -102,8 +103,8 @@ const useStyles = makeStyles((theme) => ({
   section: {
     marginTop: "90px",
     minHeight: "100vh",
-    background: "#333",
-    color: "#fff",
+    background: "#01303f",
+    color: "white",
   },
 
   sectioncontent: {
@@ -111,6 +112,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
   },
   card: {
+    background: "#d4f0fc !important",
     height: "80vh",
     display: "flex",
     marginTop: theme.spacing(5),
