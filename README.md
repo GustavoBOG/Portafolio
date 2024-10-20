@@ -2,6 +2,10 @@
 ---
 
 ### primera vez usando MATERIAL-UI
+- cada unidad del theme.spacing() es de 8 pixels:
+    - 1 = 8px
+    - 2 = 16px
+    - 3 = 24px
 
 ## BREAKPOINTS EN MATERIAL-UI :
 

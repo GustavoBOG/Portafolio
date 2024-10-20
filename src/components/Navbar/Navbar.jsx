@@ -46,6 +46,7 @@ const Navbar = () => {
         <List className="menu">
           {links.map(({ id, text }, index) => (
             <Link
+              className="linkss"
               key={index}
               to={id}
               spy={true}

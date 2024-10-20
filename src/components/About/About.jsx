@@ -1,9 +1,12 @@
 import { Card, CardActions, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { makeStyles } from '@mui/styles';
-import me from '../../assets/me.png'
-import TypeWriterEffect from "react-typewriter-effect"
-import pdf from '../../assets/gustavoCV.pdf'
-import "./About.css";
+import me from '../../assets/me.png';
+import TypeWriterEffect from "react-typewriter-effect";
+import pdf from '../../assets/gustavoCV.pdf';
 
 const About = ({title, id}) => {
   const classes = useStyles();
@@ -16,18 +19,36 @@ const About = ({title, id}) => {
         <CardContent className={classes.cardcontent}>
         <TypeWriterEffect
             text="Hello, I’m Gustavo Bolívar"
-            textStyle={{ fontSize: "2rem", fontWeight: 800  }}
+            textStyle={{ 
+              fontSize: "2.5rem", 
+              fontWeight: 800
+            }}
             cursorColor="rgb(25, 189, 243)"
             startDelay={100}
-            typeSpeed={100}
+            typeSpeed={70}
           />
           <TypeWriterEffect
             text="a passionate developer and technology enthusiast."
-            textStyle={{ fontSize: "1.2rem", fontWeight: 600, color: "rgb(60,60,60)"  }}
+            textStyle={{  
+              fontSize: "1.4rem", 
+              fontWeight: 600, 
+              color: "rgb(60,60,60)",
+
+            }}
             cursorColor="rgb(25, 189, 243)"
-            startDelay={2600}
-            typeSpeed={100}
+            startDelay={2200}
+            typeSpeed={70}
           />
+            <Typography variant="h6" style={{ color: "rgb(76,75,75)"}}>
+            Hasta hace poco, llevaba una vida como la de cualquier otra persona, con hobbies y aspiraciones.
+            <br/>Seguí el camino tradicional: estudié, busqué trabajo y me adapté a lo que se esperaba...
+            <br/>Pero un día decidí tomar un giro diferente y diseñar mi propio camino.
+            <br/>Ahora, me he propuesto desarrollar y aprovechar al máximo todas mis habilidades en el mundo de la tecnología.<br/>
+            <br/>¿Y adivina qué?<br/>
+            <br/>El resultado ha sido increíblemente satisfactorio y gratificante.
+            <br/>Me he convertido en un full stack developer motivado y comprometido a seguir creciendo. 
+            <br/>Estoy decidido a convertirme en uno de los mejores en este campo, disfrutando cada paso del proceso.
+            </Typography>
         </CardContent>
         <CardActions>
           <Button 
@@ -36,7 +57,40 @@ const About = ({title, id}) => {
             component="a" 
             href={pdf} 
             download
-          >Dowload CV</Button>
+            style={{
+              position: 'absolute', 
+            }}><AssignmentIndIcon/>
+          </Button>
+          <Button 
+            variant="contained" 
+            className={classes.inbuttom}
+            component="a" 
+            href={pdf} 
+            download
+            style={{
+              position: 'absolute', 
+            }}><LinkedInIcon/>
+          </Button>
+          <Button 
+            variant="contained" 
+            className={classes.gitbuttom}
+            component="a" 
+            href={pdf} 
+            download
+            style={{
+              position: 'absolute', 
+            }}><GitHubIcon/>
+          </Button>
+          <Button 
+            variant="contained" 
+            className={classes.instabuttom}
+            component="a" 
+            href={pdf} 
+            download
+            style={{
+              position: 'absolute', 
+            }}><InstagramIcon/>
+          </Button>
         </CardActions>
       </Card>
     </div>
@@ -53,15 +107,13 @@ const useStyles = makeStyles((theme) => ({
   },
 
   sectioncontent: {
-    maxWidth: "80vw",
+    maxWidth: "90vw",
     margin: "0 auto",
   },
   card: {
-    height: "70vh",
+    height: "80vh",
     display: "flex",
-    flexDirection: "row-reverse",
-    justifyContent: "space-between",
-    marginTop: theme.spacing(6),
+    marginTop: theme.spacing(5),
     position: "relative",
   },
   media: {
@@ -69,13 +121,72 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
     objectFit: "cover",
     borderRadius: "15px",
-    margin: theme.spacing(5),
+    margin: theme.spacing(2),
 
   },
-  pdfbutton: {
-    position: "absolute",
-    top: "13rem",
+  cardcontent: {
+    marginTop: theme.spacing(10),
+    "& h6" : {
+      fontSize: "18px",
+      marginTop:theme.spacing(3),
+      '@media (max-width: 970px)': {
+        fontSize: "15px",
+      },
+      '@media (max-width: 840px)': {
+        fontSize: "14px",
+      },
+      '@media (max-width: 715px)': {
+        fontSize: "13px",
+      },
+      '@media (max-width: 708px)': {
+        fontSize: "12px",
+      },
+      '@media (max-width: 670px)': {
+        display: 'none',
+      },
+    },
   },
+ pdfbutton: {
+  position: "absolute ",
+  bottom: "2rem",
+  right: "4rem",
+  '@media (max-width:670px)': {
+    bottom: "11rem",
+    right: "1rem",
+      },
+ },
+ inbuttom: {
+  position: "absolute ",
+  bottom: "2rem",
+  right: "9rem",
+  '@media (max-width: 670px)': {
+    bottom: "8rem",
+    right: "1rem",
+      },    
+ },
+ gitbuttom: {
+  position: "absolute ",
+  bottom: "2rem",
+  right: "14rem",
+  '@media (max-width: 670px)': {
+    bottom: "5rem",
+    right: "1rem",
+      },    
+ },
+ instabuttom: {
+  position: "absolute ",
+  bottom: "2rem",
+  right: "19rem",
+  '@media (max-width:670px)': {
+    bottom: "2rem",
+    right: "1rem",
+      },
+  '@media (max-width:300px)': {
+    bottom: "8rem",
+    right: "6rem",
+      },    
+ },
+ 
 }));
 
 export default About;

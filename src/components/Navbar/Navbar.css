@@ -41,12 +41,12 @@
 }
 
 
-a {
+.linkss {
     margin-left: 18px;
     font-weight: bold;
 }
 
-a:hover {
+.linkss:hover {
     color: rgb(0, 222, 0);
     border-bottom: 2px solid;
 }
