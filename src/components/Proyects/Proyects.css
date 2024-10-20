@@ -1,7 +1,7 @@
 .Psection {
     min-height: 100vh;
-    background: #333;
-    color: #fff;
+    background: rgb(1, 48, 63);
+    color: rgb(194, 232, 255);
 }
 
 .Psectioncontent{
