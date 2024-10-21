@@ -24,7 +24,7 @@ const Proyects = ({title,id}) => {
                 <CardContent
                 className={classes.enlace} 
                 >
-                  <Link href={link} color="primary" target="_blank" rel="noopener noreferrer">
+                  <Link href={link} color="primary" target="_blank" rel="noopener noreferrer" >
                     {title}
                   </Link>
                 </CardContent>
@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: 275,
     margin: theme.spacing(3),
     transition: 'transform 0.50s ease-in-out',
+    backgroundColor:'rgb(194,232,255) !important',
     '&:hover': {
       transform: 'scale(1.05)',
       boxShadow: '0px 4px 15px rgb(124, 157, 198)',
@@ -64,8 +65,13 @@ const useStyles = makeStyles((theme) => ({
   },
   enlace:{
     textAlign: 'center',
-    fontSize: '20px'
+    fontSize: '25px',
+    fontWeight: "bold",
+    color: 'rgb(4, 37, 88)',
+    '& a': {
+      textDecoration: 'none',
+    },
   },
 }))
 
-export default Proyects
+export default Proyects;

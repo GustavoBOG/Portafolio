@@ -57,6 +57,7 @@ const Skills = ({ title, id }) => {
   ];
 
   //----para ver las estrellas del objeto si estan llenas o no 
+  
   const renderStars = (count) => {
     return (
       <div className="stars-container">
@@ -66,6 +67,7 @@ const Skills = ({ title, id }) => {
       </div>
     );
   };
+//------ para abrir y cerrar tecnologias en pantalla pequeña 
 
   const toggleCategory = (category) => {
     setExpandedCategory(expandedCategory === category ? null : category);
